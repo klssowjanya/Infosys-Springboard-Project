@@ -1,0 +1,79 @@
+
+Activity 1: Double the Number
+# Write your code here
+def double_number(num: int) -> int:
+    return 2*num
+result = double_number(5)
+print(result)  # 10
+10
+
+************************************************************************************************************************************************************************************************
+
+Activity 2: Sum and Average
+# Write your code here
+def sum_and_average(num1: int, num2: int) -> list:
+    a = []
+    sum = num1 + num2
+    a.append(sum)
+    a.append(float(sum/2))
+    return tuple(a)
+
+sum_and_average(5, 10)
+(15, 7.5)
+
+************************************************************************************************************************************************************************************************
+
+Activity 3: Document the Function
+def sum_and_difference(num1, num2):
+    """
+    This function takes two numbers as input and returns their sum and difference.
+
+    Parameters:
+    - num1: The first number.
+    - num2: The second number.
+
+    Returns:
+    - A tuple containing the sum and difference of the two numbers.
+    """
+    total = num1 + num2
+    difference = num1 - num2
+    return total, difference
+result = sum_and_difference(5, 10)
+print(result)  # (15, -5)
+(15, -5)
+print(sum_and_difference.__doc__)
+    This function takes two numbers as input and returns their sum and difference.
+
+    Parameters:
+    - num1: The first number.
+    - num2: The second number.
+
+    Returns:
+    - A tuple containing the sum and difference of the two numbers.
+
+************************************************************************************************************************************************************************************************
+
+
+Activity 4: Type Checking
+# Write your code here
+def is_integer(num: int) -> bool:
+    return type(num)==int
+result = is_integer(5)
+print(result)  # True
+True
+result_2 = is_integer(5.0)
+print(result_2)  # False
+False
+
+************************************************************************************************************************************************************************************************
+
+Activity 5: Celsius to Fahrenheit Converter
+# Write your code here
+def celsius_to_fahrenheit(C: int) -> float:
+    F = (C * 9/5) + 32
+    return F
+result = celsius_to_fahrenheit(0)
+print(result)  # 32.0
+32.0
+
+************************************************************************************************************************************************************************************************
