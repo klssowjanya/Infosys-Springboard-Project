@@ -1,0 +1,222 @@
+1. What type of error occurs when you try to divide by zero in Python?
+
+    Syntax Error
+    Runtime Error
+    Logical Error
+    Indentation Error
+
+Answer:
+Runtime Error
+
+*************************************************************************************************************************************************************************************************************************
+
+2. Which of the following represents a Syntax Error?
+
+    if x == 5 print("x is five")
+    average = sum(numbers) / len(numbers) + 1
+    print(5 / 0)
+    y = int("hello")
+
+Answer:
+if x == 5 print("x is five")
+
+*************************************************************************************************************************************************************************************************************************
+
+3. What will be output of given python code?
+
+if True print("Hello")
+
+    Logical Error
+    Print "Hello"
+    Empty String
+    Syntax Error
+
+Answer:
+Syntax Error
+
+*************************************************************************************************************************************************************************************************************************
+4. What type of error might this code produce result = (10 + 5) / 3 + 1 if result is expected to be 5?
+
+    Syntax Error
+    Runtime Error
+    Logical Error
+    TypeError
+
+Answer:
+Logical Error
+
+*************************************************************************************************************************************************************************************************************************
+
+5. Which among the following will raise Syntax Error?
+
+    for i in range(10): print(i)
+    print(10/0)
+    x = 5
+    print("Result":)
+
+Answer:
+print("Result":)
+
+*************************************************************************************************************************************************************************************************************************
+6. What type of error occurs when trying to read a file that does not exist?
+
+    Logical Error
+    Syntax Error
+    Runtime Error
+    Indentation Error
+
+Answer:
+Runtime Error
+
+*************************************************************************************************************************************************************************************************************************
+
+7. You wrote a program that asks users for a number, but the user enters a string instead. How can you handle potential errors?
+
+    Just let the program crash
+    Use a try/except block to catch ValueError
+    None of the above
+    Use an if statement to check if it's a number
+
+Answer:
+Use a try/except block to catch ValueError
+
+*************************************************************************************************************************************************************************************************************************
+
+8. During arithmetic operations, if you accidentally multiply a float with a string, which error will occur? How can you prevent this?
+
+    IndentationError; adjust spacing
+    NameError; check variable names
+    SyntaxError; change the code format
+    TypeError; use try/except to catch it
+
+Answer:
+TypeError; use try/except to catch it
+
+*************************************************************************************************************************************************************************************************************************
+9. What will be output of following code?
+def add_numbers (x, y) :
+    return x + y
+print(add_numbers("5", 7))
+
+    "5" + 7
+    TypeError
+    57
+    12
+
+Answer:
+TypeError
+
+*************************************************************************************************************************************************************************************************************************
+
+10. What is the purpose of an else block in a try-except structure?
+
+    To execute code only if no exceptions occur
+    To provide cleanup actions
+    It has no purpose and is optional
+    To handle all types of exceptions
+
+Answer:
+To execute code only if no exceptions occur
+
+*************************************************************************************************************************************************************************************************************************
+
+11. What does the finally block guarantee in Python?
+
+    It runs only if the try block has no errors
+    It executes only when no exceptions are raised
+    It guarantees that the code runs before exceptions are raised
+    It guarantees that the code runs regardless of whether an exception occurred or not.
+
+Answer:
+It guarantees that the code runs regardless of whether an exception occurred or not.
+
+
+*************************************************************************************************************************************************************************************************************************
+
+12
+Which of the following is not a built-in exception in Python?
+
+    ValueError
+    ImportError
+    AttributeError
+    OutOfMemoryError
+
+Answer:
+OutOfMemoryError
+
+*************************************************************************************************************************************************************************************************************************
+
+13. When handling exceptions, what happens if an exception occurs inside an except block but there is no subsequent try block to catch it?
+
+    The program terminates and prints the traceback
+    The program continues executing the next line after the except block
+    The program handles the second exception automatically
+    It raises a warning but does not stop execution
+
+Answer:
+The program terminates and prints the traceback
+
+*************************************************************************************************************************************************************************************************************************
+14. Which of the following statements correctly describes how to handle an IndentationError?
+
+    Correct the indentation in the code before running it
+    Use a default value when the error occurs
+    Wrap the code in a try-except block to catch it
+    Indentation errors can be ignored without consequences
+
+Answer:
+Correct the indentation in the code before running it
+*************************************************************************************************************************************************************************************************************************
+15. Which of the following statements about finally blocks is false?
+
+    The finally block will execute even if a return statement is encountered in the try block
+    A finally block can be skipped if there is an unhandled exception
+    You cannot have a finally block without a corresponding try block
+    A finally block executes regardless of whether an exception is raised
+
+Answer:
+A finally block can be skipped if there is an unhandled exception
+
+*************************************************************************************************************************************************************************************************************************
+16. Select the correct output of this code
+
+while True:
+  try:
+    num = int(input("Enter a positive number (or -1): "))
+    if num == -1:
+      print("Exiting")
+      break
+    elif num < 0:
+      raise ValueError("The number must be positive! ")
+  except ValueError as e:
+    print(e)
+
+    It will terminate immediately if a negative number is entered
+    It will print an error message if a negative number (other than -1) is entered, and continue asking for input until -1 is entered
+    It will give a syntax error
+    It will print nothing and exit the program
+
+Answer:
+It will print an error message if a negative number (other than -1) is entered, and continue asking for input until -1 is entered
+
+*************************************************************************************************************************************************************************************************************************
+17. What will be the output of the following code snippet if the user inputs is -5.
+while True:
+  try:
+    number = int(input("Enter a positive number: " ) )
+    if number e:
+      raise ValueError("OnIy positive numbers are allowed .")
+    print(f"You entered: {number}" )
+    break
+  except valueError as e:
+    print(e)
+
+    Only positive numbers are allowed
+    Execution will stop without any output
+    You entered: 5
+    Only positive numbers are allowed. You entered: 3
+
+Answer:
+Only positive numbers are allowed
+
+*************************************************************************************************************************************************************************************************************************
