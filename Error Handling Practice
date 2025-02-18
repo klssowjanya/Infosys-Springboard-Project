@@ -1,0 +1,144 @@
+Activity 1. Handling ZeroDivisionError
+# write your code here
+
+def safe_division(a, b):
+    try:
+        return a/b
+    except ZeroDivisionError:
+        return "Cannot divide by zero!"
+
+safe_division(10, 0)
+
+Activity 2. Handling ValueError in Input Conversion
+def convert_to_int(value):
+    try:
+        return int(value)
+    except ValueError:
+        return "Invalid input!"
+
+Activity 3. Handling Multiple Exceptions
+# write your code here
+def safe_input_division(a, b):
+    try:
+        return int(a) / int(b)
+    except ValueError:
+        return "Invalid input!"
+    except ZeroDivisionError:
+        return "Cannot divide by zero!"
+
+Activity 4. Raising ValueError¶
+# write your code here
+def check_positive(num):
+    if num < 0:
+        raise ValueError("Negative numbers are not allowed")
+    return "Valid number"
+
+Activity 5. Invalid Age Input¶
+# write your code here
+
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+    return "Age is valid"
+
+Activity 6. Catching TypeError
+# write your code here
+def safe_addition(a, b):
+    try:
+        return a + b
+    except TypeError:
+        return "Type mismatch!"
+
+Activity 7. Handling AttributeError
+# write your code here
+
+def call_invalid_method(value):
+    try:
+        return value.invalid_method()
+    except AttributeError:
+        return "Invalid operation!"
+
+Activity 8. Invalid Email Format
+# write your code here
+
+def validate_email(email):
+    if "@" not in email:
+        raise ValueError("Invalid email format")
+    return "Email is valid"
+
+Activity 9. Using finally block to Ensure Cleanup
+# write your code here
+def cleanup_example():
+    var = "In use"
+    try:
+        raise Exception("Some error")
+    finally:
+        var = "Cleaned"
+        return var 
+
+Activity 10. Nested Try-Except Blocks
+def nested_error_handling(value):
+    try:
+        try:
+            return int(value)
+        except ValueError:
+            raise TypeError("Inner Type Error")
+    except TypeError:
+        return "Handled in outer block"
+
+Activity 11. Handle Empty String
+# write your code here
+def check_empty_string(s):
+    if not s:
+        raise ValueError("String cannot be empty!")
+    return "String is valid"
+
+
+Activity 12. Combining Try-Except-Else-Finally
+def complete_error_handling(a, b):
+    try:
+        result = a / b
+    except ZeroDivisionError:
+        return "Cannot divide by zero!"
+    else:
+        return result
+    finally:
+        print("Operation completed!")
+
+Activity 13. Custom Exception for Invalid Password Length
+class InvalidPasswordError(Exception):
+    pass
+
+def validate_password(password):
+    if len(password) < 8:
+        raise InvalidPasswordError("Password must be at least 8 characters long!")
+    return "Password is valid"
+
+Activity 14. Substring Not Found
+# write your code here
+def find_substring(string, substring):
+    try:
+        index = string.index(substring)
+        return f"Substring found at index {index}"
+    except ValueError:
+        return "Substring not found!"
+
+
+Activity 15. Check Boolean Input Validation
+# write your code here
+def validate_boolean(value):
+    if not isinstance(value, bool):
+        raise TypeError("Value must be a boolean!")
+    return "Boolean is valid"
+
+Activity 16. Using else with Try Block
+
+# write your code here
+
+def divide_numbers(a, b):
+    try:
+        result = a / b
+    except ZeroDivisionError:
+        return "Cannot divide by zero!"
+    else:
+        return result
