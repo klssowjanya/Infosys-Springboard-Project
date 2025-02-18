@@ -1,0 +1,213 @@
+1. Decide Play Actions Based on Weather Conditions
+
+def weather_decision(temperature):
+    
+    if temperature >= 35:
+        return "It's too hot, I won't play."
+    elif temperature >= 15:  # Fill the condition
+        return "It's normal, I will play."
+    else:
+        return "It's cold, I will play with a jacket."
+
+*************************************************************************************************************************************************************************************************************************
+
+2. Determine the Suitable Movie Based on Age
+def movie_night(age):
+    
+    if age >= 7:  # Fill the condition
+        return "You can watch a movie."
+    else:
+        return "You should watch a cartoon movie."
+*************************************************************************************************************************************************************************************************************************
+
+3. Filter Fruits with More Than Five Characters
+def filter_fruits(fruits):
+    result = []
+    for fruit in fruits:
+        # Fill the condition below
+        if len(fruit) > 5:
+            result.append(fruit)
+    return result
+*************************************************************************************************************************************************************************************************************************
+4. Maximize Shopping with a Given Budget
+def shopping_budget(prices, budget):
+    total_spent = 0
+    for price in prices:
+        total_spent += price
+        if total_spent > budget:  # Check after adding the current price
+            return "Out of Budget"
+    return total_spent
+
+*************************************************************************************************************************************************************************************************************************
+
+5. Predict the output of the following code:
+
+def ice_cream_decision(money) :
+  if money >= 50:
+    return "I will buy an ice cream. "
+  else :
+    return "I will save my money. "
+print(ice_cream_decision(40))
+
+
+    I will save my money.
+    I will buy an ice cream.
+    None
+    Error
+
+Answer:
+I will save my money.
+
+*************************************************************************************************************************************************************************************************************************
+
+6. Exam Grades
+
+Predict the output of the following code:
+def exam_grade(marks):
+  if marks
+    return "Excellent"
+  elif marks
+    return "Good"
+  elif marks
+    return "Average "
+  else:
+    return "Fail"
+
+print(exam_grade(65))
+
+    Excellent
+    Average
+    Fail
+    Good
+Answer:
+Average
+
+*************************************************************************************************************************************************************************************************************************
+7. Water Consumption
+
+Predict the output of the following code:
+Preview
+def drink_water(daily_usage) :
+  total used = 0
+  for usage in daily_usage:
+    if usage > 2:
+      continue
+    total_used += usage
+  return total used
+print(drink_water([1.5, 2.1, 2.5, 1.8]))
+
+    2.5
+    3.3
+    2.1
+    1.8
+Answer:
+3.3
+  
+*************************************************************************************************************************************************************************************************************************
+8. Travel Distance
+Predict the output of the following code:
+  
+def travel_distance(distances, max_distance) :
+    total_distance = 0
+        for distance in distances:
+            if total_distance + distance > max distance:
+                return "Cannot Travel"
+            total_distance += distance
+    return total_distance
+print(travel_distance([10, 20, 30, 40],50))
+
+    90
+    50
+    100
+    Cannot travel
+
+Answer:
+Cannot travel
+
+*************************************************************************************************************************************************************************************************************************
+
+Correct the Code
+9. Discount Checker
+def check_discount(bill_amount):
+    if bill_amount > 1000:
+        return "Congratulations! You get a discount."
+    else:
+        return "No discount for you."
+
+*************************************************************************************************************************************************************************************************************************
+
+10. Weekend Planner
+def weekend_plan(weather):
+    if weather == "sunny":
+        return "Go for a hike."
+    elif weather == "rainy":
+        return "Watch movies at home."
+    elif weather == "snowy":
+        return "Build a snowman."
+    else:
+        return "Stay home."
+
+*************************************************************************************************************************************************************************************************************************
+
+11. Find the Longest Word
+def longest_word(words):
+    longest = "";
+    for word in words:
+        if len(word) > len(longest):  # Logical error: wrong comparison
+            longest = word    
+    return longest
+
+*************************************************************************************************************************************************************************************************************************
+
+12. Gym Subscription
+def gym_subscription(nov):
+    if nov == 0:
+        return "Inactive"
+    elif nov >= 1 and nov <= 3:
+        return "Basic"
+    else:
+        return "Premium"
+
+*************************************************************************************************************************************************************************************************************************
+
+13. Study Hours Tracker
+def study_hours_tracker(times):
+    l = []
+    for time in times:
+        if time >= 6:
+            l.append("Excellent")
+        elif time >= 3:
+            l.append("Good")
+        else:
+            l.append("Needs Improvement")
+    return l
+
+*************************************************************************************************************************************************************************************************************************
+14. Marathon Planneer
+def marathon_planner(initial_distance, target_distance):
+    total = initial_distance
+    var = initial_distance
+    days = 1
+    while total <= target_distance:
+        var += var * 0.10
+        total += var
+        days += 1
+    return days
+        
+marathon_planner(5, 20)
+4
+
+*************************************************************************************************************************************************************************************************************************
+
+15. Vacation Budget
+def vacation_budget(exps, budget):
+    tot = 0
+    for e in exps:
+        if e > 500:
+            continue
+        if tot + e > budget:
+            break
+        tot += e
+    return tot
+
+*************************************************************************************************************************************************************************************************************************
