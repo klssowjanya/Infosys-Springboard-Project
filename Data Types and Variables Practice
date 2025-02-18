@@ -1,0 +1,101 @@
+1. Define a variable num with value 100 of integer data type.
+Code:
+num = int(100)
+
+************************************************************************************************************************************************************************************************
+Activity 2. Define a variable score with value 100 of float data type
+Code: 
+score = float(100)
+************************************************************************************************************************************************************************************************
+Activity 3. Define a variable name with your name of string data type.
+# write your code here
+name = "Suhaina"
+************************************************************************************************************************************************************************************************
+Activity 4. Identify data type of variable result
+# write your code here
+a = 42
+b = "42"
+c = 42.0
+result = a + int(b) + c
+print(type(result))
+<class 'float'>
+
+************************************************************************************************************************************************************************************************
+Activity 5. Simple Arithmetic with Numeric Types
+# write your code here
+num1 = 10
+num2 = 20
+result = num1 + num2
+print(type(result))
+<class 'int'>
+************************************************************************************************************************************************************************************************
+Activity 6. Convert to Upper case
+# write your code here
+text = "Hello, I am Datawars. I help users to learn Data Science"
+text_upper = text.upper()
+HELLO, I AM DATAWARS. I HELP USERS TO LEARN DATA SCIENCE
+
+************************************************************************************************************************************************************************************************
+Activity 7. Convert to Lower case
+# write your code here
+text = "PYTHON IS A PROGRAMMING LANGUAGE"
+text_lower = text.lower()
+
+************************************************************************************************************************************************************************************************
+Activity 8. String Concatenation
+# write your code here
+first_name = "Alice"
+last_name = "Brown"
+full_name = first_name + " " + last_name
+************************************************************************************************************************************************************************************************
+Activity 9. Type Conversion and Arithmetic
+# write your code here
+percentage = float(85.5)
+result = int(percentage) + 10
+************************************************************************************************************************************************************************************************
+Activity 10. Multi-line String Representation
+# write your code here
+student_info = """Name: Alice
+ID: 101
+Score: 90"""
+
+print(student_info)
+Name: Alice
+ID: 101
+Score: 90
+
+************************************************************************************************************************************************************************************************
+Activity 11. Boolean Operation
+# write your code here
+attended_classes = True
+submitted_assignment = False
+result = attended_classes and submitted_assignment
+
+************************************************************************************************************************************************************************************************
+Activity 12. String Indexing and Slicing
+# write your code here
+student_name = "Alice"
+first_char = student_name[0]
+last_three_chars = student_name[-3:]
+
+************************************************************************************************************************************************************************************************
+Activity 13. Reverse a String
+# write your code here
+student_name = "Alice"
+reversed_name = student_name[::-1]
+
+************************************************************************************************************************************************************************************************
+Activity 14. Sum of Digits of a Student ID
+student_id = 123
+digits = str(student_id)
+digit_sum = int(digits[0]) + int(digits[1]) + int(digits[2])
+print(digit_sum)
+6
+
+************************************************************************************************************************************************************************************************
+Activity 15. Compute Final Score
+# write your code here
+exam_score = 90
+assignment_score = 40
+final_score = exam_score*0.6 + assignment_score*0.4
+************************************************************************************************************************************************************************************************
