@@ -1,0 +1,18 @@
+Ques:1
+Found the message? Type it here and reveal it to the world!
+Note: the message doesn't contain any punctuation signs. It contains whitespaces only between the words. That is, don't include whitespaces before or after the first or last word.
+Ans:
+  This is a regular case of iterating and comparing elements. We'll start by iterating each word in the message variable. But to do so, we need to use the split() function, 
+  that "breaks" a long string into the individual words:
+  >>> message
+  apcinsfcs achzi ffqge obbmmm ajrfe...
+  >>> message.split() # this is our magic function
+  ['apcinsfcs', 'achzi', 'ffqge', 'obbmmm', 'ajrfe', ...]
+  We can now just iterate over the words and compare if the word is part of the english dictionary (the set words). If the word is present, we just preserve it in an auxiliary structure (that I named hidden_message).
+  hidden_message = []
+  for word in message.split():
+      if word in known_english_words:
+          hidden_message.append(word)
+  print(" ".join(hidden_message))
+  You'll find that the hidden message is: when are we meeting
+  Looks like the sailor had high hopes... Sadly, we'll never know the outcome of it.
